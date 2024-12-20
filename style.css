@@ -1,3 +1,4 @@
+
 .title {
     text-align: center;
     font-family: Impact,'Arial Narrow Bold', sans-serif;
@@ -7,9 +8,28 @@
 .body {
     box-sizing: border-box;
 }
+.game-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.option {
+   flex-direction: column;
+   display: flex;
+}
+.option button {
+    padding: 15px;
+    border-radius: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: darkgrey;
+    margin: 30px 0 40px 300px;
+}
 .container{
     display: grid;
     margin: auto;
+    margin-right: 450px;
     width: 450px;
     height: 450px;
     border-style: solid;
@@ -22,6 +42,14 @@
     background-color: rgb(255, 255, 255);
     border-style: solid;
     border-width: thin;
-    border-color: black ;
+    border-color: rgb(255, 254, 254) ;
     text-align: center;
 }
+
+.grid-item:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.2s ease-in-out; 
+    cursor: pointer; 
+}
+
